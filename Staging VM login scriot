@@ -1,0 +1,29 @@
+Host apps-staging-host-3
+  IdentityFile ~/.ssh/Apps_Staging_Internal.pem
+  HostName 20.1.1.105
+  User ubuntu
+  ProxyCommand ssh -i ~/.ssh/containers.pem -W %h:%p ubuntu@apps-staging-jumpbox
+
+Host apps-staging-host-1
+  IdentityFile ~/.ssh/Apps_Staging_Internal.pem
+  HostName 20.1.1.157
+  User ubuntu
+  ProxyCommand ssh -i ~/.ssh/containers.pem -W %h:%p ubuntu@apps-staging-jumpbox
+
+Host mint-staging-host-1-2
+  IdentityFile ~/.ssh/Apps_Staging_Internal.pem
+  HostName 20.1.1.135
+  User ubuntu
+  ProxyCommand ssh -i ~/.ssh/containers.pem -W %h:%p ubuntu@apps-staging-jumpbox
+
+Host mint-staging-host-3-4
+  IdentityFile ~/.ssh/Apps_Staging_Internal.pem
+  HostName 20.1.1.44
+  User ubuntu
+  ProxyCommand ssh -i ~/.ssh/containers.pem -W %h:%p ubuntu@apps-staging-jumpbox
+
+Host mint-staging-host-5-6
+  IdentityFile ~/.ssh/Apps_Staging_Internal.pem
+  HostName 20.1.1.36
+  User ubuntu
+  ProxyCommand ssh -i ~/.ssh/containers.pem -W %h:%p ubuntu@apps-staging-jumpbox
